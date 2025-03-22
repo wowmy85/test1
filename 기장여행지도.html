@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <title>기장 하루여행 지도</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <style>
+    #map { height: 100vh; width: 100%; }
+  </style>
+</head>
+<body>
+  <div id="map"></div>
+
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script>
+    var map = L.map('map').setView([35.2443, 129.2225], 12); // 기장 중심 좌표
+
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      maxZoom: 19,
+      attribution: '© OpenStreetMap contributors'
+    }).addTo(map);
+
+    var spots = [
+      ["매화원", 35.2789, 129.2606],
+      ["카페공지", 35.2733, 129.2521],
+      ["기장시장", 35.2443, 129.2225],
+      ["연화리 해안산책로", 35.2094, 129.2397],
+      ["죽성성당", 35.2051, 129.2509],
+      ["장안사", 35.3125, 129.1790]
+    ];
+
+    for (var i = 0; i < spots.length; i++) {
+      var spot = spots[i];
+      L.marker([spot[1], spot[2]]).addTo(map)
+        .bindPopup("<strong>" + spot[0] + "</strong>");
+    }
+  </script>
+</body>
+</html>
