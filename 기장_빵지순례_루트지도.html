@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_7513c7bbc7da681e5299affe67d9a540 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdn.jsdelivr.net/npm/leaflet-ant-path@1.1.2/dist/leaflet-ant-path.min.js"></script>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_7513c7bbc7da681e5299affe67d9a540" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_7513c7bbc7da681e5299affe67d9a540 = L.map(
+                "map_7513c7bbc7da681e5299affe67d9a540",
+                {
+                    center: [35.25, 129.2],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_e6988e7a53d78ad327e5ccc83545a8c6 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_7513c7bbc7da681e5299affe67d9a540);
+        
+    
+            var marker_b9c95aaa482e203a7a132263757f2de6 = L.marker(
+                [35.2445, 129.2226],
+                {}
+            ).addTo(map_7513c7bbc7da681e5299affe67d9a540);
+        
+    
+        var popup_79e297733cad83cab8367e568d1a29ea = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2c3307e38da233c61c22ceab38b6619c = $(`<div id="html_2c3307e38da233c61c22ceab38b6619c" style="width: 100.0%; height: 100.0%;">카페공지</div>`)[0];
+            popup_79e297733cad83cab8367e568d1a29ea.setContent(html_2c3307e38da233c61c22ceab38b6619c);
+        
+
+        marker_b9c95aaa482e203a7a132263757f2de6.bindPopup(popup_79e297733cad83cab8367e568d1a29ea)
+        ;
+
+        
+    
+    
+            marker_b9c95aaa482e203a7a132263757f2de6.bindTooltip(
+                `<div>
+                     카페공지
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_45be6f181328627bd5af97eab1f836dc = L.marker(
+                [35.326, 129.1818],
+                {}
+            ).addTo(map_7513c7bbc7da681e5299affe67d9a540);
+        
+    
+        var popup_bc2716b9ace3cb44d6115045f5ecbbd9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0235a264f0bbf87f6254580310ae478f = $(`<div id="html_0235a264f0bbf87f6254580310ae478f" style="width: 100.0%; height: 100.0%;">오디너리브레드</div>`)[0];
+            popup_bc2716b9ace3cb44d6115045f5ecbbd9.setContent(html_0235a264f0bbf87f6254580310ae478f);
+        
+
+        marker_45be6f181328627bd5af97eab1f836dc.bindPopup(popup_bc2716b9ace3cb44d6115045f5ecbbd9)
+        ;
+
+        
+    
+    
+            marker_45be6f181328627bd5af97eab1f836dc.bindTooltip(
+                `<div>
+                     오디너리브레드
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_32b0a2140130ed420677ba1926952a57 = L.marker(
+                [35.2594, 129.2361],
+                {}
+            ).addTo(map_7513c7bbc7da681e5299affe67d9a540);
+        
+    
+        var popup_5740c918307898b4a7dbc4815f9420b3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d872c214144219282ff52167a5868a42 = $(`<div id="html_d872c214144219282ff52167a5868a42" style="width: 100.0%; height: 100.0%;">브레드바바</div>`)[0];
+            popup_5740c918307898b4a7dbc4815f9420b3.setContent(html_d872c214144219282ff52167a5868a42);
+        
+
+        marker_32b0a2140130ed420677ba1926952a57.bindPopup(popup_5740c918307898b4a7dbc4815f9420b3)
+        ;
+
+        
+    
+    
+            marker_32b0a2140130ed420677ba1926952a57.bindTooltip(
+                `<div>
+                     브레드바바
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ab0b1380ebfbd0a8bd09ac77b21d9683 = L.marker(
+                [35.2808, 129.1271],
+                {}
+            ).addTo(map_7513c7bbc7da681e5299affe67d9a540);
+        
+    
+        var popup_1e4af9037c1e9a69efd590c446df738a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_19dd47dab81a1f4cde33d2f127ee9451 = $(`<div id="html_19dd47dab81a1f4cde33d2f127ee9451" style="width: 100.0%; height: 100.0%;">라틀리에 김영섭</div>`)[0];
+            popup_1e4af9037c1e9a69efd590c446df738a.setContent(html_19dd47dab81a1f4cde33d2f127ee9451);
+        
+
+        marker_ab0b1380ebfbd0a8bd09ac77b21d9683.bindPopup(popup_1e4af9037c1e9a69efd590c446df738a)
+        ;
+
+        
+    
+    
+            marker_ab0b1380ebfbd0a8bd09ac77b21d9683.bindTooltip(
+                `<div>
+                     라틀리에 김영섭
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_aeb3e65ddc0ed6fd1ce1e7a11eb1cbc2 = L.marker(
+                [35.2157, 129.2356],
+                {}
+            ).addTo(map_7513c7bbc7da681e5299affe67d9a540);
+        
+    
+        var popup_62c01b4127857a0b8706bd2770062868 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c528b21178edc64889f450486b0a9e98 = $(`<div id="html_c528b21178edc64889f450486b0a9e98" style="width: 100.0%; height: 100.0%;">시그니엘101</div>`)[0];
+            popup_62c01b4127857a0b8706bd2770062868.setContent(html_c528b21178edc64889f450486b0a9e98);
+        
+
+        marker_aeb3e65ddc0ed6fd1ce1e7a11eb1cbc2.bindPopup(popup_62c01b4127857a0b8706bd2770062868)
+        ;
+
+        
+    
+    
+            marker_aeb3e65ddc0ed6fd1ce1e7a11eb1cbc2.bindTooltip(
+                `<div>
+                     시그니엘101
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            ant_path_8b48f086873972ac17dfe3725c0500d5 = L.polyline.antPath(
+              [[35.2445, 129.2226], [35.326, 129.1818], [35.2594, 129.2361], [35.2808, 129.1271], [35.2157, 129.2356]],
+              {"bubblingMouseEvents": true, "color": "blue", "dashArray": [10, 20], "dashOffset": null, "delay": 400, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "hardwareAcceleration": false, "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "paused": false, "pulseColor": "#FFFFFF", "reverse": false, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+        ).addTo(map_7513c7bbc7da681e5299affe67d9a540);
+        
+</script>
+</html>
