@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>기장 매화 코스 지도</title>
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=7cbec2657b04998c7ec1ca7ba027135b"></script>
+    <style>
+        #map {
+            width: 100%;
+            height: 600px;
+        }
+    </style>
+</head>
+<body>
+    <h2>기장 매화 꽃놀이 + 맛집 코스 지도</h2>
+    <div id="map"></div>
+    <script>
+        var mapContainer = document.getElementById('map'), 
+            mapOption = { 
+                center: new kakao.maps.LatLng(35.2422, 129.2231), 
+                level: 11
+            }; 
+
+        var map = new kakao.maps.Map(mapContainer, mapOption); 
+
+        var positions = [
+            {
+                title: '기장 매화원',
+                latlng: new kakao.maps.LatLng(35.2422, 129.2231)
+            },
+            {
+                title: '카페공지',
+                latlng: new kakao.maps.LatLng(35.2388, 129.2165)
+            },
+            {
+                title: '기장 멸치쌈밥 골목',
+                latlng: new kakao.maps.LatLng(35.2451, 129.2173)
+            },
+            {
+                title: '연화리 횟집 거리',
+                latlng: new kakao.maps.LatLng(35.2115, 129.2304)
+            },
+            {
+                title: '장안사 옛날국밥집',
+                latlng: new kakao.maps.LatLng(35.2740, 129.1525)
+            }
+        ];
+
+        for (var i = 0; i < positions.length; i++) {
+            var marker = new kakao.maps.Marker({
+                map: map,
+                position: positions[i].latlng,
+                title : positions[i].title
+            });
+
+            var infowindow = new kakao.maps.InfoWindow({
+                content: '<div style="padding:5px;font-size:14px;">' + positions[i].title + '</div>'
+            });
+
+            kakao.maps.event.addListener(marker, 'mouseover', makeOverListener(map, marker, infowindow));
+            kakao.maps.event.addListener(marker, 'mouseout', makeOutListener(infowindow));
+        }
+
+        function makeOverListener(map, marker, infowindow) {
+            return function() {
+                infowindow.open(map, marker);
+            };
+        }
+
+        function makeOutListener(infowindow) {
+            return function() {
+                infowindow.close();
+            };
+        }
+    </script>
+</body>
+</html>
