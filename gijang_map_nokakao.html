@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_3aa8d73032ef9991c3f5d6cb115ec8bc {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_3aa8d73032ef9991c3f5d6cb115ec8bc" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_3aa8d73032ef9991c3f5d6cb115ec8bc = L.map(
+                "map_3aa8d73032ef9991c3f5d6cb115ec8bc",
+                {
+                    center: [35.2422, 129.2231],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_19460568690e215804acfd45ee7a0c66 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_3aa8d73032ef9991c3f5d6cb115ec8bc);
+        
+    
+            var marker_33bb427ddf2316d0294b14d162009ebc = L.marker(
+                [35.2422, 129.2231],
+                {}
+            ).addTo(map_3aa8d73032ef9991c3f5d6cb115ec8bc);
+        
+    
+        var popup_28be631de2f75dc42abc34e385d7106e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a5d68023531cfe484a742ec4d426819a = $(`<div id="html_a5d68023531cfe484a742ec4d426819a" style="width: 100.0%; height: 100.0%;">기장 매화원</div>`)[0];
+            popup_28be631de2f75dc42abc34e385d7106e.setContent(html_a5d68023531cfe484a742ec4d426819a);
+        
+
+        marker_33bb427ddf2316d0294b14d162009ebc.bindPopup(popup_28be631de2f75dc42abc34e385d7106e)
+        ;
+
+        
+    
+    
+            var marker_2453298d8c6dec130b9510603f8a8b8a = L.marker(
+                [35.2388, 129.2165],
+                {}
+            ).addTo(map_3aa8d73032ef9991c3f5d6cb115ec8bc);
+        
+    
+        var popup_0bda7f55ea2d3d32d689489098b64fd5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6184ae22f6ce78952dc16f6229e2d52c = $(`<div id="html_6184ae22f6ce78952dc16f6229e2d52c" style="width: 100.0%; height: 100.0%;">카페공지</div>`)[0];
+            popup_0bda7f55ea2d3d32d689489098b64fd5.setContent(html_6184ae22f6ce78952dc16f6229e2d52c);
+        
+
+        marker_2453298d8c6dec130b9510603f8a8b8a.bindPopup(popup_0bda7f55ea2d3d32d689489098b64fd5)
+        ;
+
+        
+    
+    
+            var marker_d760424979d712948303d863120f14b4 = L.marker(
+                [35.2451, 129.2173],
+                {}
+            ).addTo(map_3aa8d73032ef9991c3f5d6cb115ec8bc);
+        
+    
+        var popup_073f7832ac39931942a5e685d811214e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f44d1fdad8713599ed2c6a294f5b317f = $(`<div id="html_f44d1fdad8713599ed2c6a294f5b317f" style="width: 100.0%; height: 100.0%;">기장 멸치쌈밥 골목</div>`)[0];
+            popup_073f7832ac39931942a5e685d811214e.setContent(html_f44d1fdad8713599ed2c6a294f5b317f);
+        
+
+        marker_d760424979d712948303d863120f14b4.bindPopup(popup_073f7832ac39931942a5e685d811214e)
+        ;
+
+        
+    
+    
+            var marker_30c8e42c83de818a80b4890e9ff8e826 = L.marker(
+                [35.2115, 129.2304],
+                {}
+            ).addTo(map_3aa8d73032ef9991c3f5d6cb115ec8bc);
+        
+    
+        var popup_09c3e384bfc89b16e8901c8846812c9e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_33879264ec20992ffe2182198496b576 = $(`<div id="html_33879264ec20992ffe2182198496b576" style="width: 100.0%; height: 100.0%;">연화리 횟집 거리</div>`)[0];
+            popup_09c3e384bfc89b16e8901c8846812c9e.setContent(html_33879264ec20992ffe2182198496b576);
+        
+
+        marker_30c8e42c83de818a80b4890e9ff8e826.bindPopup(popup_09c3e384bfc89b16e8901c8846812c9e)
+        ;
+
+        
+    
+    
+            var marker_60b16840180a4ccbc23a8e3d94057f31 = L.marker(
+                [35.274, 129.1525],
+                {}
+            ).addTo(map_3aa8d73032ef9991c3f5d6cb115ec8bc);
+        
+    
+        var popup_5f4591aa71891e28d563ca2b02039362 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c23b4203892b9cad17e525f029a887d8 = $(`<div id="html_c23b4203892b9cad17e525f029a887d8" style="width: 100.0%; height: 100.0%;">장안사 옛날국밥집</div>`)[0];
+            popup_5f4591aa71891e28d563ca2b02039362.setContent(html_c23b4203892b9cad17e525f029a887d8);
+        
+
+        marker_60b16840180a4ccbc23a8e3d94057f31.bindPopup(popup_5f4591aa71891e28d563ca2b02039362)
+        ;
+
+        
+    
+</script>
+</html>
