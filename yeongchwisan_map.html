@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_c841464248e45c45b56513a002194c5c {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_c841464248e45c45b56513a002194c5c" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_c841464248e45c45b56513a002194c5c = L.map(
+                "map_c841464248e45c45b56513a002194c5c",
+                {
+                    center: [34.7784, 127.6384],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 15,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_c5edafe38fb6dc869db2b93f1c8ef5c1 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_c841464248e45c45b56513a002194c5c);
+        
+    
+            var marker_48a15976ea722c0857eae39d22c596ea = L.marker(
+                [34.7784, 127.6384],
+                {}
+            ).addTo(map_c841464248e45c45b56513a002194c5c);
+        
+    
+        var popup_3b182baa70eee142d7028450a5b96ce8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8b1cf3e80a0eb0e01b1e6d13f17bbb56 = $(`<div id="html_8b1cf3e80a0eb0e01b1e6d13f17bbb56" style="width: 100.0%; height: 100.0%;">영취산 정상</div>`)[0];
+            popup_3b182baa70eee142d7028450a5b96ce8.setContent(html_8b1cf3e80a0eb0e01b1e6d13f17bbb56);
+        
+
+        marker_48a15976ea722c0857eae39d22c596ea.bindPopup(popup_3b182baa70eee142d7028450a5b96ce8)
+        ;
+
+        
+    
+    
+            var marker_f642204b1c99e0c3fc9afdd28e98124e = L.marker(
+                [34.7733, 127.6522],
+                {}
+            ).addTo(map_c841464248e45c45b56513a002194c5c);
+        
+    
+        var popup_06f1c0dd1b92981c9bca162f212468d3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8f811165b9fcb3f9d6044fffc8aeb4b4 = $(`<div id="html_8f811165b9fcb3f9d6044fffc8aeb4b4" style="width: 100.0%; height: 100.0%;">상암초등학교 임시주차장</div>`)[0];
+            popup_06f1c0dd1b92981c9bca162f212468d3.setContent(html_8f811165b9fcb3f9d6044fffc8aeb4b4);
+        
+
+        marker_f642204b1c99e0c3fc9afdd28e98124e.bindPopup(popup_06f1c0dd1b92981c9bca162f212468d3)
+        ;
+
+        
+    
+    
+            var marker_cd1ec20c57cc3e38fe1c323f1f061606 = L.marker(
+                [34.7851, 127.641],
+                {}
+            ).addTo(map_c841464248e45c45b56513a002194c5c);
+        
+    
+        var popup_81778659d7015aa1ac4901d39bc2c3a9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fbf54bace7582349c9d01eae322c71ac = $(`<div id="html_fbf54bace7582349c9d01eae322c71ac" style="width: 100.0%; height: 100.0%;">흥국사 입구 공터</div>`)[0];
+            popup_81778659d7015aa1ac4901d39bc2c3a9.setContent(html_fbf54bace7582349c9d01eae322c71ac);
+        
+
+        marker_cd1ec20c57cc3e38fe1c323f1f061606.bindPopup(popup_81778659d7015aa1ac4901d39bc2c3a9)
+        ;
+
+        
+    
+    
+            var marker_caab0614c2087d70fdcd551ba77f3dee = L.marker(
+                [34.7765, 127.6433],
+                {}
+            ).addTo(map_c841464248e45c45b56513a002194c5c);
+        
+    
+        var popup_5f4df8aa0f6b3adc0a23442862eadebd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_483d37c81177ca5b7901c789418eada5 = $(`<div id="html_483d37c81177ca5b7901c789418eada5" style="width: 100.0%; height: 100.0%;">진달래 군락지(초보자 코스)</div>`)[0];
+            popup_5f4df8aa0f6b3adc0a23442862eadebd.setContent(html_483d37c81177ca5b7901c789418eada5);
+        
+
+        marker_caab0614c2087d70fdcd551ba77f3dee.bindPopup(popup_5f4df8aa0f6b3adc0a23442862eadebd)
+        ;
+
+        
+    
+</script>
+</html>
