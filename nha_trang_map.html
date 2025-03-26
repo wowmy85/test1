@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>나트랑 맛집 지도</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css" />
+  <style>
+    html, body { height: 100%; margin: 0; }
+    #map { height: 100%; }
+  </style>
+</head>
+<body>
+  <div id="map"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+  <script>
+    var map = L.map('map').setView([12.2436, 109.1995], 14); // 나트랑 중심
+
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: 'Map data © <a href="https://openstreetmap.org">OpenStreetMap</a> contributors'
+    }).addTo(map);
+
+    // 마커 리스트
+    var locations = [
+      {
+        name: "Bún Chả Hương Liên",
+        coords: [12.2485, 109.1906],
+        desc: "로컬 분짜 전문점"
+      },
+      {
+        name: "Oc Xom Moi",
+        coords: [12.2522, 109.1978],
+        desc: "현지 해산물구이 인기집"
+      },
+      {
+        name: "Yen’s Restaurant",
+        coords: [12.2366, 109.1965],
+        desc: "관광객 인기 베트남 퓨전"
+      },
+      {
+        name: "LIVIN Collective",
+        coords: [12.2369, 109.2008],
+        desc: "감성 브런치 + 맥주"
+      },
+      {
+        name: "Lac Canh BBQ",
+        coords: [12.2442, 109.2001],
+        desc: "숯불구이 로컬 고깃집"
+      }
+    ];
+
+    // 마커 생성
+    locations.forEach(function(loc) {
+      var marker = L.marker(loc.coords).addTo(map);
+      marker.bindPopup("<b>" + loc.name + "</b><br>" + loc.desc);
+      marker.bindTooltip(loc.name, { permanent: false, direction: "top" });
+    });
+  </script>
+</body>
+</html>
