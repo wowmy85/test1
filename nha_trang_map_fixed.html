@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_ba3d68377fc940d1c099bc10754e82b9 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_ba3d68377fc940d1c099bc10754e82b9" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_ba3d68377fc940d1c099bc10754e82b9 = L.map(
+                "map_ba3d68377fc940d1c099bc10754e82b9",
+                {
+                    center: [12.2436, 109.1995],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 15,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_1880a807fa5a472be597c9189e65c8f9 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_ba3d68377fc940d1c099bc10754e82b9);
+        
+    
+            var marker_3c6c926a4301f96fa8a216067c269a08 = L.marker(
+                [12.245962, 109.182985],
+                {}
+            ).addTo(map_ba3d68377fc940d1c099bc10754e82b9);
+        
+    
+        var popup_e20285985f7f7c764437ba3efee2ab1c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9a154b0a6e6b3251217e021b4b775a80 = $(`<div id="html_9a154b0a6e6b3251217e021b4b775a80" style="width: 100.0%; height: 100.0%;"><b>Bún Chả Hương Liên</b><br>로컬 분짜 전문점</div>`)[0];
+            popup_e20285985f7f7c764437ba3efee2ab1c.setContent(html_9a154b0a6e6b3251217e021b4b775a80);
+        
+
+        marker_3c6c926a4301f96fa8a216067c269a08.bindPopup(popup_e20285985f7f7c764437ba3efee2ab1c)
+        ;
+
+        
+    
+    
+            marker_3c6c926a4301f96fa8a216067c269a08.bindTooltip(
+                `<div>
+                     Bún Chả Hương Liên
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3d85cd068082f9d9ce7fa6767c05debd = L.marker(
+                [12.246829, 109.189105],
+                {}
+            ).addTo(map_ba3d68377fc940d1c099bc10754e82b9);
+        
+    
+        var popup_36da6fa801ae1faa3f42ef41bd88842e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f8a7e97b2e05f527fa638c45c98763b6 = $(`<div id="html_f8a7e97b2e05f527fa638c45c98763b6" style="width: 100.0%; height: 100.0%;"><b>Oc Xom Moi</b><br>현지 해산물구이 인기집</div>`)[0];
+            popup_36da6fa801ae1faa3f42ef41bd88842e.setContent(html_f8a7e97b2e05f527fa638c45c98763b6);
+        
+
+        marker_3d85cd068082f9d9ce7fa6767c05debd.bindPopup(popup_36da6fa801ae1faa3f42ef41bd88842e)
+        ;
+
+        
+    
+    
+            marker_3d85cd068082f9d9ce7fa6767c05debd.bindTooltip(
+                `<div>
+                     Oc Xom Moi
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_79f74b851b099765b8594307c6dbce26 = L.marker(
+                [12.239721, 109.196847],
+                {}
+            ).addTo(map_ba3d68377fc940d1c099bc10754e82b9);
+        
+    
+        var popup_5c0c3919e93903f88313ed6d4bda1f0a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5a406dc786ff2a6ded3b6c396945b664 = $(`<div id="html_5a406dc786ff2a6ded3b6c396945b664" style="width: 100.0%; height: 100.0%;"><b>Yen’s Restaurant</b><br>관광객 인기 베트남 퓨전</div>`)[0];
+            popup_5c0c3919e93903f88313ed6d4bda1f0a.setContent(html_5a406dc786ff2a6ded3b6c396945b664);
+        
+
+        marker_79f74b851b099765b8594307c6dbce26.bindPopup(popup_5c0c3919e93903f88313ed6d4bda1f0a)
+        ;
+
+        
+    
+    
+            marker_79f74b851b099765b8594307c6dbce26.bindTooltip(
+                `<div>
+                     Yen’s Restaurant
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9ea01d9a5f54aa675bcf0ee33f752872 = L.marker(
+                [12.239122, 109.196108],
+                {}
+            ).addTo(map_ba3d68377fc940d1c099bc10754e82b9);
+        
+    
+        var popup_beef80358c5a0a9988f1179d74f8bebb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4716204a06c45932dbf5ba97d20948c6 = $(`<div id="html_4716204a06c45932dbf5ba97d20948c6" style="width: 100.0%; height: 100.0%;"><b>LIVIN Collective</b><br>감성 브런치 + 맥주</div>`)[0];
+            popup_beef80358c5a0a9988f1179d74f8bebb.setContent(html_4716204a06c45932dbf5ba97d20948c6);
+        
+
+        marker_9ea01d9a5f54aa675bcf0ee33f752872.bindPopup(popup_beef80358c5a0a9988f1179d74f8bebb)
+        ;
+
+        
+    
+    
+            marker_9ea01d9a5f54aa675bcf0ee33f752872.bindTooltip(
+                `<div>
+                     LIVIN Collective
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ad98f0c943f886f34cbe52dd087256e2 = L.marker(
+                [12.243157, 109.192529],
+                {}
+            ).addTo(map_ba3d68377fc940d1c099bc10754e82b9);
+        
+    
+        var popup_deebf639599d7d70f020c6dbd5bdf2f7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c736bc637aaeac46b7fef13ee8993fe8 = $(`<div id="html_c736bc637aaeac46b7fef13ee8993fe8" style="width: 100.0%; height: 100.0%;"><b>Lac Canh BBQ</b><br>숯불구이 로컬 고깃집</div>`)[0];
+            popup_deebf639599d7d70f020c6dbd5bdf2f7.setContent(html_c736bc637aaeac46b7fef13ee8993fe8);
+        
+
+        marker_ad98f0c943f886f34cbe52dd087256e2.bindPopup(popup_deebf639599d7d70f020c6dbd5bdf2f7)
+        ;
+
+        
+    
+    
+            marker_ad98f0c943f886f34cbe52dd087256e2.bindTooltip(
+                `<div>
+                     Lac Canh BBQ
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
+</html>
